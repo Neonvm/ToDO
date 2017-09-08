@@ -1,0 +1,22 @@
+.Todo{
+    text-align: center;
+}
+.createTask{
+    margin: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    display: flex;
+}
+.nameLabel{
+    width: 400px;
+    border-right: 1px solid black;
+}
+.labels{
+    border-bottom: 1px solid black;
+}
+.nlabel{
+    width: 400px;
+    float: left;
+    border-right: 1px solid black;
+}

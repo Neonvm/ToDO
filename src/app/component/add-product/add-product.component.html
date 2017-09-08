@@ -1,0 +1,28 @@
+<div class="container ">
+  <h1 class="Todo">To Do list</h1>
+  <div class="row createTask">
+    <label>Task:</label>
+    <input [(ngModel)]='name'  name="name" size="25" value="some">
+
+    <label >Text:</label>
+    
+    <textarea [(ngModel)]='text' rows="2" cols="50"></textarea>
+    
+    <input (click)="addItem(name,text)" class="btn btn-danger" type="button" value="Отправить">
+  </div>
+  
+  <div class="allItems">
+     <div class="row">
+       <div class="labels">
+      <label class="nameLabel" for="">Name of Task</label>
+      <label for="">Task text</label>
+      </div>
+    </div>
+     <div class="row Items" *ngFor="let item of items">
+        <div class="nlabel">{{item.name}}</div>
+        <div>{{item.text}}</div>
+     </div>
+  </div>        
+        
+  
+</div>
